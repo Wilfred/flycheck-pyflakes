@@ -5,6 +5,7 @@
 ;; Author: Wilfred Hughes <me@wilfred.me.uk>
 ;; Created: 29 April 2014
 ;; Version: 0.1
+;; Package-Requires: ((flycheck "0.18"))
 
 ;;; Commentary:
 
