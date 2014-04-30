@@ -13,6 +13,7 @@
 ;; to your init.el:
 
 ;; (require 'flycheck-pyflakes)
+;; (add-hook 'python-mode-hook 'flycheck-mode)
 
 ;; If you want to use pyflakes you probably don't want pylint or
 ;; flake8. To disable those checkers, add the following to your
