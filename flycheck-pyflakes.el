@@ -45,6 +45,7 @@
 ;;; Code:
 (require 'flycheck)
 
+;;;###autoload
 (flycheck-define-checker python-pyflakes
   "A Python syntax and style checker using the pyflakes utility.
 
@@ -54,6 +55,7 @@ See URL `http://pypi.python.org/pypi/pyflakes'."
   ((error line-start (file-name) ":" line ":" (message) line-end))
   :modes python-mode)
 
+;;;###autoload
 (add-to-list 'flycheck-checkers 'python-pyflakes)
 
 (provide 'flycheck-pyflakes)
