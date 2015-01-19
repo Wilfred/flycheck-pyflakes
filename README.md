@@ -1,6 +1,8 @@
 flycheck-pyflakes
 =================
 
+[![MELPA](http://melpa.org/packages/flycheck-pyflakes-badge.svg)](http://melpa.org/#/flycheck-pyflakes)
+
 Flycheck already has great support for Python if you want to use
 pylint or flake8.
 
