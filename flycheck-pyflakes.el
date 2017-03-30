@@ -45,13 +45,14 @@
 ;;; Code:
 (require 'flycheck)
 
-(defvar flycheck-pyflakes-executable "pyflakes")
-
 (flycheck-define-checker python-pyflakes
   "A Python syntax and style checker using the pyflakes utility.
 
+To override the path to the pyflakes executable, set
+`flycheck-python-pyflakes-executable'.
+
 See URL `http://pypi.python.org/pypi/pyflakes'."
-  :command (flycheck-pyflakes-executable source-inplace)
+  :command ("pyflakes" source-inplace)
   :error-patterns
   ((error line-start (file-name) ":" line ":" (message) line-end))
   :modes python-mode)
