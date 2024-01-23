@@ -55,7 +55,7 @@ See URL `http://pypi.python.org/pypi/pyflakes'."
   :command ("pyflakes" source-inplace)
   :error-patterns
   ((error line-start (file-name) ":" line ":" (message) line-end))
-  :modes python-mode)
+  :modes (python-mode python-ts-mode))
 
 (add-to-list 'flycheck-checkers 'python-pyflakes)
 
